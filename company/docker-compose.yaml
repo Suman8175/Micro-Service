@@ -21,6 +21,7 @@ services:
     environment:
       PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-pgadmin4@pgadmin.org}
       PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-admin}
+      PGADMIN_DEFAULT_SERVER_PORT: 5432  # Define port for PostgreSQL
     volumes:
       - pgadmin:/var/lib/pgadmin
     networks:
